@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_string_interpolations
+
 import 'package:flutter/cupertino.dart';
 
 TextStyle titleFont =
@@ -6,7 +8,12 @@ TextStyle infoFont =
     const TextStyle(fontWeight: FontWeight.w400, fontSize: 18.0);
 
 Widget additionalInformation(
-    String wind, String humidity, String pressure, String feels_like) {
+    // ignore: non_constant_identifier_names
+    String wind,
+    String humidity,
+    String pressure,
+    // ignore: non_constant_identifier_names
+    String feels_like) {
   return Container(
     width: double.infinity,
     padding: const EdgeInsets.all(18.0),

@@ -1,6 +1,8 @@
-import 'dart:ui';
+// ignore_for_file: unnecessary_string_interpolations
+
 
 import 'package:flutter/material.dart';
+// import 'package:weather_app_tut/model/weather_model.dart';
 import 'package:weather_app_v2/views/additional_information.dart';
 
 Widget currentWeather(IconData icon, String temp, String location) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app_v2/model/service/weather_api_client.dart';
 import 'package:weather_app_v2/views/current_weather.dart';
 
 void main() {
@@ -26,6 +27,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  WeatherApiClient client = WeatherApiClient();
+  @override
+  void initState() {
+    // ignore: todo
+    // TODO: implement initState
+    super.initState();
+    client.getCurrentWeather('Osh');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,3 +62,5 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
+
+//https://www.youtube.com/watch?v=Gt2bIEblFX4 39-00
