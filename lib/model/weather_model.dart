@@ -3,7 +3,7 @@
 class Weather {
   String? cityName;
   double? temp;
-  int? wind;
+  num? wind;
   int? humidity;
 
   double? feels_like;
@@ -24,6 +24,5 @@ class Weather {
     pressure = json['main']['pressure'];
     humidity = json['main']['humidity0'];
     feels_like = json['main']['feels_like'];
-    
   }
 }
